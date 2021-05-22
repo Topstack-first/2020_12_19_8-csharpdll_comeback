@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53E83292-D819-40AF-BF2C-A18B8A691A1E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ScriptHookVDotNet</RootNamespace>
+    <AssemblyName>ScriptHookVDotNet</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Core" />
+    <Compile Include="Global.cs" />
+    <Compile Include="_GUID.cs" />
+    <Compile Include="_MEMORY_BLOCK.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0CAE@E.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0CBB@E.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0L@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0BJ@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0BF@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0BB@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0BC@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0BI@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0BG@$$CBD.cs" />
+    <Compile Include="HINSTANCE__.cs" />
+    <Compile Include="_unnamed-type-g_hooks_.cs" />
+    <Compile Include="GTA\Math\Vector3.cs" />
+    <Compile Include="GTA\Math\NativeVector3.cs" />
+    <Compile Include="GTA\Math\Matrix.cs" />
+    <Compile Include="GTA\Native\MemoryAccess.cs" />
+    <Compile Include="GTA\Native\ModelInfoClassType.cs" />
+    <Compile Include="GTA\Native\VehicleStructClassType.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0CL@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0CA@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0BA@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0CG@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0EF@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0BH@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0GK@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0O@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0DI@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0DB@$$CBD.cs" />
+    <Compile Include="GTA\RequireScript.cs" />
+    <Compile Include="GTA\Script.cs" />
+    <Compile Include="GTA\IScriptTask.cs" />
+    <Compile Include="GTA\ScriptDomain.cs" />
+    <Compile Include="GTA\Native\INativeValue.cs" />
+    <Compile Include="GTA\Native\InputArgument.cs" />
+    <Compile Include="GTA\Native\OutputArgument.cs" />
+    <Compile Include="GTA\Native\NativeCollectionItem.cs" />
+    <Compile Include="GTA\Native\NativeCollection.cs" />
+    <Compile Include="GTA\Native\Function.cs" />
+    <Compile Include="GTA\Native\GlobalVariable.cs" />
+    <Compile Include="GTA\Math\Quaternion.cs" />
+    <Compile Include="GTA\Math\Vector2.cs" />
+    <Compile Include="GTA\ScriptSettings.cs" />
+    <Compile Include="ScriptHook.cs" />
+    <Compile Include="GTA\Native\Hash.cs" />
+    <Compile Include="eGameVersion.cs" />
+    <Compile Include="GTA\Native\NativeTask.cs" />
+    <Compile Include="GTA\Native\NativeCollectionTask.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY06$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY00$$CBD.cs" />
+    <Compile Include="007c6e28-1290-4779-a731-b82caf8d0016\EntityPool.cs" />
+    <Compile Include="007c6e28-1290-4779-a731-b82caf8d0016\VehiclePool.cs" />
+    <Compile Include="007c6e28-1290-4779-a731-b82caf8d0016\GenericPool.cs" />
+    <Compile Include="007c6e28-1290-4779-a731-b82caf8d0016\EntityPoolTask.cs" />
+    <Compile Include="007c6e28-1290-4779-a731-b82caf8d0016\EuphoriaMessageTask.cs" />
+    <Compile Include="007c6e28-1290-4779-a731-b82caf8d0016\GenericTask.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0N@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0P@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0BE@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0M@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0CK@$$CBD.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY07$$CBD.cs" />
+    <Compile Include="GTA\Native\checkpoint.cs" />
+    <Compile Include="_MODULEINFO.cs" />
+    <Compile Include="GTA\Native\HashNode.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0EA@H.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY02M.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY03M.cs" />
+    <Compile Include="GTA\Math\Random.cs" />
+    <Compile Include="_CrtImplementationDetails_\ModuleLoadException.cs" />
+    <Compile Include="_CrtImplementationDetails_\ModuleLoadExceptionHandlerException.cs" />
+    <Compile Include="_CrtImplementationDetails_\ModuleUninitializer.cs" />
+    <Compile Include="__scrt_native_startup_state.cs" />
+    <Compile Include="_CrtImplementationDetails_\TriBool.cs" />
+    <Compile Include="_CrtImplementationDetails_\Progress.cs" />
+    <Compile Include="IUnknown.cs" />
+    <Compile Include="_CrtImplementationDetails_\LanguageSupport.cs" />
+    <Compile Include="gcroot_System__String __.cs" />
+    <Compile Include="__s_GUID.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0A@P6AHXZ.cs" />
+    <Compile Include="ICLRRuntimeHost.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY00Q6MPEBXXZ.cs" />
+    <Compile Include="ICorRuntimeHost.cs" />
+    <Compile Include="_CppImplementationDetails_\$ArrayType$$$BY0A@P6AXXZ.cs" />
+    <Compile Include="_CrtImplementationDetails_\ThisModule.cs" />
+    <Compile Include="_EXCEPTION_POINTERS.cs" />
+    <Compile Include="GTA\DlcWeaponData.cs" />
+    <Compile Include="GTA\DlcWeaponComponentData.cs" />
+    <Compile Include="GTA\AudioFlag.cs" />
+    <Compile Include="GTA\Audio.cs" />
+    <Compile Include="GTA\BlipColor.cs" />
+    <Compile Include="GTA\BlipSprite.cs" />
+    <Compile Include="GTA\Blip.cs" />
+    <Compile Include="GTA\Bone.cs" />
+    <Compile Include="GTA\CameraShake.cs" />
+    <Compile Include="GTA\Camera.cs" />
+    <Compile Include="GTA\GameplayCamera.cs" />
+    <Compile Include="GTA\Button.cs" />
+    <Compile Include="GTA\ButtonCombination.cs" />
+    <Compile Include="GTA\CheckpointIcon.cs" />
+    <Compile Include="GTA\CheckpointCustomIconStyle.cs" />
+    <Compile Include="GTA\CheckpointCustomIcon.cs" />
+    <Compile Include="GTA\Checkpoint.cs" />
+    <Compile Include="GTA\Control.cs" />
+    <Compile Include="GTA\ForceType.cs" />
+    <Compile Include="GTA\Entity.cs" />
+    <Compile Include="GTA\EntityBone.cs" />
+    <Compile Include="GTA\EntityBoneCollection.cs" />
+    <Compile Include="GTA\GameVersion.cs" />
+    <Compile Include="GTA\Language.cs" />
+    <Compile Include="GTA\InputMode.cs" />
+    <Compile Include="GTA\WindowTitle.cs" />
+    <Compile Include="GTA\Game.cs" />
+    <Compile Include="GTA\ISpatial.cs" />
+    <Compile Include="GTA\IExistable.cs" />
+    <Compile Include="GTA\IDeletable.cs" />
+    <Compile Include="GTA\PoolObject.cs" />
+    <Compile Include="GTA\Model.cs" />
+    <Compile Include="GTA\InvertAxis.cs" />
+    <Compile Include="GTA\ParticleEffectsAsset.cs" />
+    <Compile Include="GTA\ParticleEffect.cs" />
+    <Compile Include="GTA\EntityParticleEffect.cs" />
+    <Compile Include="GTA\CoordinateParticleEffect.cs" />
+    <Compile Include="GTA\Gender.cs" />
+    <Compile Include="GTA\DrivingStyle.cs" />
+    <Compile Include="GTA\VehicleDrivingFlags.cs" />
+    <Compile Include="GTA\HelmetType.cs" />
+    <Compile Include="GTA\ParachuteLandingType.cs" />
+    <Compile Include="GTA\ParachuteState.cs" />
+    <Compile Include="GTA\RagdollType.cs" />
+    <Compile Include="GTA\SpeechModifier.cs" />
+    <Compile Include="GTA\Ped.cs" />
+    <Compile Include="GTA\PedBone.cs" />
+    <Compile Include="GTA\PedBoneCollection.cs" />
+    <Compile Include="GTA\FormationType.cs" />
+    <Compile Include="GTA\PedGroup.cs" />
+    <Compile Include="GTA\PedHash.cs" />
+    <Compile Include="GTA\PickupType.cs" />
+    <Compile Include="GTA\Pickup.cs" />
+    <Compile Include="GTA\ParachuteTint.cs" />
+    <Compile Include="GTA\Player.cs" />
+    <Compile Include="GTA\Prop.cs" />
+    <Compile Include="GTA\RadioStation.cs" />
+    <Compile Include="GTA\RaycastResult.cs" />
+    <Compile Include="GTA\Relationship.cs" />
+    <Compile Include="GTA\RelationshipGroup.cs" />
+    <Compile Include="GTA\RopeType.cs" />
+    <Compile Include="GTA\Rope.cs" />
+    <Compile Include="GTA\ScaleformArgumentTXD.cs" />
+    <Compile Include="GTA\Scaleform.cs" />
+    <Compile Include="GTA\PedComponents.cs" />
+    <Compile Include="GTA\PedProps.cs" />
+    <Compile Include="GTA\Style.cs" />
+    <Compile Include="GTA\IPedVariation.cs" />
+    <Compile Include="GTA\PedComponent.cs" />
+    <Compile Include="GTA\PedProp.cs" />
+    <Compile Include="GTA\FiringPattern.cs" />
+    <Compile Include="GTA\EnterVehicleFlags.cs" />
+    <Compile Include="GTA\AnimationFlags.cs" />
+    <Compile Include="GTA\LeaveVehicleFlags.cs" />
+    <Compile Include="GTA\Tasks.cs" />
+    <Compile Include="GTA\TaskSequence.cs" />
+    <Compile Include="GTA\CargobobHook.cs" />
+    <Compile Include="GTA\LicensePlateStyle.cs" />
+    <Compile Include="GTA\LicensePlateType.cs" />
+    <Compile Include="GTA\VehicleClass.cs" />
+    <Compile Include="GTA\VehicleColor.cs" />
+    <Compile Include="GTA\VehicleLandingGearState.cs" />
+    <Compile Include="GTA\VehicleLockStatus.cs" />
+    <Compile Include="GTA\VehicleNeonLight.cs" />
+    <Compile Include="GTA\VehicleRoofState.cs" />
+    <Compile Include="GTA\VehicleSeat.cs" />
+    <Compile Include="GTA\VehicleWindowTint.cs" />
+    <Compile Include="GTA\Vehicle.cs" />
+    <Compile Include="GTA\VehicleDoor.cs" />
+    <Compile Include="GTA\VehicleDoorIndex.cs" />
+    <Compile Include="GTA\VehicleDoorCollection.cs" />
+    <Compile Include="GTA\VehicleHash.cs" />
+    <Compile Include="GTA\VehicleMod.cs" />
+    <Compile Include="GTA\VehicleModType.cs" />
+    <Compile Include="GTA\VehicleToggleModType.cs" />
+    <Compile Include="GTA\VehicleWheelType.cs" />
+    <Compile Include="GTA\VehicleModCollection.cs" />
+    <Compile Include="GTA\VehicleToggleMod.cs" />
+    <Compile Include="GTA\VehicleWheel.cs" />
+    <Compile Include="GTA\VehicleWheelCollection.cs" />
+    <Compile Include="GTA\VehicleWindow.cs" />
+    <Compile Include="GTA\VehicleWindowIndex.cs" />
+    <Compile Include="GTA\VehicleWindowCollection.cs" />
+    <Compile Include="GTA\WeaponTint.cs" />
+    <Compile Include="GTA\WeaponGroup.cs" />
+    <Compile Include="GTA\Weapon.cs" />
+    <Compile Include="GTA\WeaponAsset.cs" />
+    <Compile Include="GTA\WeaponCollection.cs" />
+    <Compile Include="GTA\WeaponHash.cs" />
+    <Compile Include="GTA\VehicleWeaponHash.cs" />
+    <Compile Include="GTA\GTACalender.cs" />
+    <Compile Include="GTA\Weather.cs" />
+    <Compile Include="GTA\IntersectOptions.cs" />
+    <Compile Include="GTA\MarkerType.cs" />
+    <Compile Include="GTA\ExplosionType.cs" />
+    <Compile Include="GTA\World.cs" />
+    <Compile Include="GTA\ComponentAttachmentPoint.cs" />
+    <Compile Include="GTA\WeaponComponent.cs" />
+    <Compile Include="GTA\InvalidWeaponComponent.cs" />
+    <Compile Include="GTA\WeaponComponentHash.cs" />
+    <Compile Include="GTA\WeaponComponentCollection.cs" />
+    <Compile Include="GTA\UI\Font.cs" />
+    <Compile Include="GTA\UI\IElement.cs" />
+    <Compile Include="GTA\UI\Rectangle.cs" />
+    <Compile Include="GTA\UI\Container.cs" />
+    <Compile Include="GTA\UI\HudComponent.cs" />
+    <Compile Include="GTA\UI\LoadingSpinnerType.cs" />
+    <Compile Include="GTA\UI\Notification.cs" />
+    <Compile Include="GTA\UI\LoadingPrompt.cs" />
+    <Compile Include="GTA\UI\Screen.cs" />
+    <Compile Include="GTA\UI\ISprite.cs" />
+    <Compile Include="GTA\UI\Sprite.cs" />
+    <Compile Include="GTA\UI\CustomSprite.cs" />
+    <Compile Include="GTA\UI\Alignment.cs" />
+    <Compile Include="GTA\UI\Text.cs" />
+    <Compile Include="GTA\NaturalMotion\Euphoria.cs" />
+    <Compile Include="GTA\NaturalMotion\Message.cs" />
+    <Compile Include="GTA\NaturalMotion\CustomHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ArmDirection.cs" />
+    <Compile Include="GTA\NaturalMotion\AnimSource.cs" />
+    <Compile Include="GTA\NaturalMotion\FallType.cs" />
+    <Compile Include="GTA\NaturalMotion\Synchroisation.cs" />
+    <Compile Include="GTA\NaturalMotion\TurnType.cs" />
+    <Compile Include="GTA\NaturalMotion\TorqueMode.cs" />
+    <Compile Include="GTA\NaturalMotion\TorqueSpinMode.cs" />
+    <Compile Include="GTA\NaturalMotion\TorqueFilterMode.cs" />
+    <Compile Include="GTA\NaturalMotion\RbTwistAxis.cs" />
+    <Compile Include="GTA\NaturalMotion\WeaponMode.cs" />
+    <Compile Include="GTA\NaturalMotion\Hand.cs" />
+    <Compile Include="GTA\NaturalMotion\MirrorMode.cs" />
+    <Compile Include="GTA\NaturalMotion\AdaptiveMode.cs" />
+    <Compile Include="GTA\NaturalMotion\ActivePoseHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ApplyImpulseHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ApplyBulletImpulseHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\BodyRelaxHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ConfigureBalanceHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ConfigureBalanceResetHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ConfigureSelfAvoidanceHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ConfigureBulletsHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ConfigureBulletsExtraHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ConfigureLimitsHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ConfigureSoftLimitHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ConfigureShotInjuredArmHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ConfigureShotInjuredLegHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\DefineAttachedObjectHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ForceToBodyPartHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\LeanInDirectionHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\LeanRandomHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\LeanToPositionHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\LeanTowardsObjectHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\HipsLeanInDirectionHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\HipsLeanRandomHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\HipsLeanToPositionHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\HipsLeanTowardsObjectHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ForceLeanInDirectionHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ForceLeanRandomHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ForceLeanToPositionHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ForceLeanTowardsObjectHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\SetStiffnessHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\SetMuscleStiffnessHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\SetWeaponModeHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\RegisterWeaponHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ShotRelaxHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\FireWeaponHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ConfigureConstraintsHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\StayUprightHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\StopAllBehavioursHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\SetCharacterStrengthHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\SetCharacterHealthHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\SetFallingReactionHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\SetCharacterUnderwaterHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\SetCharacterCollisionsHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\SetCharacterDampingHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\SetFrictionScaleHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\AnimPoseHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ArmsWindmillHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ArmsWindmillAdaptiveHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\BalancerCollisionsReactionHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\BodyBalanceHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\BodyFoetalHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\BodyRollUpHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\BodyWritheHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\BraceForImpactHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\BuoyancyHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\CatchFallHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ElectrocuteHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\FallOverWallHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\GrabHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\HeadLookHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\HighFallHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\IncomingTransformsHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\InjuredOnGroundHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\CarriedHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\DangleHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\OnFireHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\PedalLegsHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\PointArmHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\PointGunHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\PointGunExtraHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\RollDownStairsHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ShotHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ShotNewBulletHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ShotSnapHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ShotShockSpinHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ShotFallToKneesHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ShotFromBehindHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ShotInGutsHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ShotHeadLookHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\ShotConfigureArmsHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\SmartFallHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\StaggerFallHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\TeeterHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\UpperBodyFlinchHelper.cs" />
+    <Compile Include="GTA\NaturalMotion\YankedHelper.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

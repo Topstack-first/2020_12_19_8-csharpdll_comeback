@@ -1,0 +1,2 @@
+e:\projects\fixed\2020_12_19_8(c#dll_comeback)\reflector\src\obj\Debug\ScriptHookVDotNet.csprojAssemblyReference.cache
+e:\projects\fixed\2020_12_19_8(c#dll_comeback)\reflector\src\obj\Debug\ScriptHookVDotNet.csproj.CoreCompileInputs.cache
